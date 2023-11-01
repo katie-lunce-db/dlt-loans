@@ -19,7 +19,7 @@ lspq_path = "/databricks-datasets/samples/lending_club/parquet/"
     "quality": "bronze"
   }
 )
-def lendingclub_raw():
+def lending_club_raw():
   return (
     spark.read.parquet(lspq_path)
   )
